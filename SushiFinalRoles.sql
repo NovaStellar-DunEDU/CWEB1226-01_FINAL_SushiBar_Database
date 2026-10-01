@@ -20,12 +20,12 @@ GRANT SELECT ON Store1_WalkIn_Orders TO Store1_Manager;
 GRANT SELECT ON Store1_Delivery_Orders TO Store1_Manager;
 
 CREATE ROLE Store2_Manager -- Able to read Menu, Reservations, Dine-In orders, and Online Orders TO ONLY STORE 2
-GRANT SELECT ON Store2_Menu TO Store1_Manager;
-GRANT SELECT ON Store2_Reservations TO Store1_Manager;
-GRANT SELECT ON Store2_DineIn_Orders TO Store1_Manager;
-GRANT SELECT ON Store2_Curbside_Orders TO Store1_Manager;
-GRANT SELECT ON Store2_WalkIn_Orders TO Store1_Manager;
-GRANT SELECT ON Store2_Delivery_Orders TO Store1_Manager;
+GRANT SELECT ON Store2_Menu TO Store2_Manager;
+GRANT SELECT ON Store2_Reservations TO Store2_Manager;
+GRANT SELECT ON Store2_DineIn_Orders TO Store2_Manager;
+GRANT SELECT ON Store2_Curbside_Orders TO Store2_Manager;
+GRANT SELECT ON Store2_WalkIn_Orders TO Store2_Manager;
+GRANT SELECT ON Store2_Delivery_Orders TO Store2_Manager;
 
 CREATE ROLE Store1_Host -- Read Menu, Read and write to Dinner Reservations and Dine-In orders TO ONLY STORE 1
 GRANT SELECT ON Store1_Menu TO Store1_Host;
